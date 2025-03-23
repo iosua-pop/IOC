@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns:cui="http://giove.isti.cnr.it" xmlns:ns3="uri:xs"
+           xmlns:ns4="http://schemas.xmlsoap.org/wsdl/"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:aui="http://giove.isti.cnr.it"
+           xmlns="http://giove.isti.cnr.it"
+           type="cui-multimodal-desktop"
+           schema-version="1.4.12">
+   <external_functions/>
+   <data>
+      <xs:schema finalDefault="" blockDefault="" elementFormDefault="unqualified"
+                 attributeFormDefault="unqualified"/>
+   </data>
+   <presentation name="Insert_user_data_presentation">
+      <grouping output="graphical_assignment" feedback="none" hierarchy="false"
+                ordering="false"
+                continuous_update="false"
+                id="P2_CMS"
+                hidden="false">
+            <text_edit input="equivalence" prompt="redundancy" feedback="graphical_assignment"
+                    id="P2_Insert_user_data">
+            <text_field>
+               <label>
+                  <text>
+                     <string>P2_Insert_user_data</string>
+                  </text>
+               </label>
+            </text_field>
+            <vocal_textual_input askConfirmation="false">
+               <request>
+                  <content>text edit prompt P2_Insert_user_data</content>
+               </request>
+               <events>
+                  <noinput reprompt="true" message="no input"/>
+                  <nomatch reprompt="true" message="no match"/>
+               </events>
+            </vocal_textual_input>
+         </text_edit>
+            <grouping output="graphical_assignment" feedback="none" hierarchy="false"
+                   ordering="false"
+                   continuous_update="false"
+                   id="P2_Access_Content"
+                   hidden="false">
+                <text_edit input="equivalence" prompt="redundancy" feedback="graphical_assignment"
+                       id="P2_Select_content">
+               <text_field>
+                  <label>
+                     <text>
+                        <string>P2_Select_content</string>
+                     </text>
+                  </label>
+               </text_field>
+               <vocal_textual_input askConfirmation="false">
+                  <request>
+                     <content>text edit prompt P2_Select_content</content>
+                  </request>
+                  <events>
+                     <noinput reprompt="true" message="no input"/>
+                     <nomatch reprompt="true" message="no match"/>
+                  </events>
+               </vocal_textual_input>
+            </text_edit>
+                <text_edit input="equivalence" prompt="redundancy" feedback="graphical_assignment"
+                       id="P2_Insert_content">
+               <text_field>
+                  <label>
+                     <text>
+                        <string>P2_Insert_content</string>
+                     </text>
+                  </label>
+               </text_field>
+               <vocal_textual_input askConfirmation="false">
+                  <request>
+                     <content>text edit prompt P2_Insert_content</content>
+                  </request>
+                  <events>
+                     <noinput reprompt="true" message="no input"/>
+                     <nomatch reprompt="true" message="no match"/>
+                  </events>
+               </vocal_textual_input>
+            </text_edit>
+            </grouping>
+            <text_edit input="equivalence" prompt="redundancy" feedback="graphical_assignment"
+                    id="P2_Select_Logout">
+            <text_field>
+               <label>
+                  <text>
+                     <string>P2_Select_Logout</string>
+                  </text>
+               </label>
+            </text_field>
+            <vocal_textual_input askConfirmation="false">
+               <request>
+                  <content>text edit prompt P2_Select_Logout</content>
+               </request>
+               <events>
+                  <noinput reprompt="true" message="no input"/>
+                  <nomatch reprompt="true" message="no match"/>
+               </events>
+            </vocal_textual_input>
+         </text_edit>
+        </grouping>
+   </presentation>
+</interface>

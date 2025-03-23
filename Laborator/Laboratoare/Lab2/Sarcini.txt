@@ -1,0 +1,6 @@
+1. Logare
+2. Inspectare Bilete valabile
+3. Cautare Bilete
+4. Cumparare Bilete
+5. Detalii Bilet
+6. Delogare

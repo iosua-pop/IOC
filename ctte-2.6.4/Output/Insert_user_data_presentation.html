@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns:xs="http://www.w3.org/2001/XMLSchema"
+      xmlns:fn="http://www.w3.org/2005/xpath-functions"
+      xmlns:jsp="http://java.sun.com/JSP/Page"
+      xmlns:cui="http://giove.isti.cnr.it"
+      xmlns:vxml="http://www.w3.org/2001/vxml"
+      xmlns:ev="http://www.w3.org/2001/xml-events"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:xv="http://www.voicexml.org/2002/xhtml+voice"
+      xmlns:ss="http://www.w3.org/2001/10/synthesis"
+      xml:lang="en-US">
+   <head>
+      <meta name="name" content="Insert_user_data_presentation"/>
+      <title>Insert_user_data_presentation</title>
+      <xv:sync xv:input="P2_Insert_user_data" xv:field="#P2_Insert_user_data_field"/>
+      <xv:sync xv:input="P2_Select_content" xv:field="#P2_Select_content_field"/>
+      <xv:sync xv:input="P2_Insert_content" xv:field="#P2_Insert_content_field"/>
+      <xv:sync xv:input="P2_Select_Logout" xv:field="#P2_Select_Logout_field"/>
+      <vxml:form id="vxml_form_id"><!--Generating Text Edit--><vxml:field name="P2_Insert_user_data_field" id="P2_Insert_user_data_field"><!--generating speech--><vxml:prompt timeout="30s">
+               <ss:prosody>
+                  <ss:emphasis>
+                     <ss:voice>text edit prompt P2_Insert_user_data </ss:voice>
+                  </ss:emphasis>
+               </ss:prosody>
+               <ss:break time="1s"/>
+            </vxml:prompt>
+            <!--Generating Events handler--><vxml:noinput>
+               <vxml:prompt bargein="false">
+                  <ss:prosody>
+                     <ss:emphasis>
+                        <ss:voice>no input </ss:voice>
+                     </ss:emphasis>
+                  </ss:prosody>
+               </vxml:prompt>
+               <vxml:reprompt/>
+            </vxml:noinput>
+            <vxml:nomatch>
+               <vxml:prompt bargein="false">
+                  <ss:prosody>
+                     <ss:emphasis>
+                        <ss:voice>no match </ss:voice>
+                     </ss:emphasis>
+                  </ss:prosody>
+               </vxml:prompt>
+               <vxml:reprompt/>
+            </vxml:nomatch>
+         </vxml:field>
+         <!--Generating Text Edit--><vxml:field name="P2_Select_content_field" id="P2_Select_content_field"><!--generating speech--><vxml:prompt timeout="30s">
+               <ss:prosody>
+                  <ss:emphasis>
+                     <ss:voice>text edit prompt P2_Select_content </ss:voice>
+                  </ss:emphasis>
+               </ss:prosody>
+               <ss:break time="1s"/>
+            </vxml:prompt>
+            <!--Generating Events handler--><vxml:noinput>
+               <vxml:prompt bargein="false">
+                  <ss:prosody>
+                     <ss:emphasis>
+                        <ss:voice>no input </ss:voice>
+                     </ss:emphasis>
+                  </ss:prosody>
+               </vxml:prompt>
+               <vxml:reprompt/>
+            </vxml:noinput>
+            <vxml:nomatch>
+               <vxml:prompt bargein="false">
+                  <ss:prosody>
+                     <ss:emphasis>
+                        <ss:voice>no match </ss:voice>
+                     </ss:emphasis>
+                  </ss:prosody>
+               </vxml:prompt>
+               <vxml:reprompt/>
+            </vxml:nomatch>
+         </vxml:field>
+         <!--Generating Text Edit--><vxml:field name="P2_Insert_content_field" id="P2_Insert_content_field"><!--generating speech--><vxml:prompt timeout="30s">
+               <ss:prosody>
+                  <ss:emphasis>
+                     <ss:voice>text edit prompt P2_Insert_content </ss:voice>
+                  </ss:emphasis>
+               </ss:prosody>
+               <ss:break time="1s"/>
+            </vxml:prompt>
+            <!--Generating Events handler--><vxml:noinput>
+               <vxml:prompt bargein="false">
+                  <ss:prosody>
+                     <ss:emphasis>
+                        <ss:voice>no input </ss:voice>
+                     </ss:emphasis>
+                  </ss:prosody>
+               </vxml:prompt>
+               <vxml:reprompt/>
+            </vxml:noinput>
+            <vxml:nomatch>
+               <vxml:prompt bargein="false">
+                  <ss:prosody>
+                     <ss:emphasis>
+                        <ss:voice>no match </ss:voice>
+                     </ss:emphasis>
+                  </ss:prosody>
+               </vxml:prompt>
+               <vxml:reprompt/>
+            </vxml:nomatch>
+         </vxml:field>
+         <!--Generating Text Edit--><vxml:field name="P2_Select_Logout_field" id="P2_Select_Logout_field"><!--generating speech--><vxml:prompt timeout="30s">
+               <ss:prosody>
+                  <ss:emphasis>
+                     <ss:voice>text edit prompt P2_Select_Logout </ss:voice>
+                  </ss:emphasis>
+               </ss:prosody>
+               <ss:break time="1s"/>
+            </vxml:prompt>
+            <!--Generating Events handler--><vxml:noinput>
+               <vxml:prompt bargein="false">
+                  <ss:prosody>
+                     <ss:emphasis>
+                        <ss:voice>no input </ss:voice>
+                     </ss:emphasis>
+                  </ss:prosody>
+               </vxml:prompt>
+               <vxml:reprompt/>
+            </vxml:noinput>
+            <vxml:nomatch>
+               <vxml:prompt bargein="false">
+                  <ss:prosody>
+                     <ss:emphasis>
+                        <ss:voice>no match </ss:voice>
+                     </ss:emphasis>
+                  </ss:prosody>
+               </vxml:prompt>
+               <vxml:reprompt/>
+            </vxml:nomatch>
+         </vxml:field>
+      </vxml:form>
+      <vxml:form id="ynconfirm">
+         <vxml:field type="boolean" name="yn">
+            <vxml:filled>
+               <vxml:var expr="false" name="result"/>
+               <vxml:if cond="yn">
+                  <vxml:assign expr="true" name="result"/>
+               </vxml:if>
+               <vxml:return namelist="result"/>
+            </vxml:filled>
+         </vxml:field>
+      </vxml:form>
+   </head>
+   <body id="body_id" ev:event="load" ev:handler="#vxml_form_id" style="">
+      <div style="" id="P2_CMS" title="">
+         <label for="P2_Insert_user_data" id="P2_Insert_user_data_label" class="tts"
+                tabIndex="7"
+                style="">
+            <span style="">P2_Insert_user_data</span>
+         </label>
+         <input class="asr" tabIndex="8" style="" id="P2_Insert_user_data" type="text"
+                name="P2_Insert_user_data"
+                size=""
+                value=""/>
+         <div style="" id="P2_Access_Content" title="">
+            <label for="P2_Select_content" id="P2_Select_content_label" class="tts" tabIndex="19"
+                   style="">
+               <span style="">P2_Select_content</span>
+            </label>
+            <input class="asr" tabIndex="20" style="" id="P2_Select_content" type="text"
+                   name="P2_Select_content"
+                   size=""
+                   value=""/>
+            <label for="P2_Insert_content" id="P2_Insert_content_label" class="tts" tabIndex="30"
+                   style="">
+               <span style="">P2_Insert_content</span>
+            </label>
+            <input class="asr" tabIndex="31" style="" id="P2_Insert_content" type="text"
+                   name="P2_Insert_content"
+                   size=""
+                   value=""/>
+         </div>
+         <label for="P2_Select_Logout" id="P2_Select_Logout_label" class="tts" tabIndex="41"
+                style="">
+            <span style="">P2_Select_Logout</span>
+         </label>
+         <input class="asr" tabIndex="42" style="" id="P2_Select_Logout" type="text"
+                name="P2_Select_Logout"
+                size=""
+                value=""/>
+      </div>
+   </body>
+</html>
