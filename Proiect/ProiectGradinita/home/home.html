@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplicație pentru Copii</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+<div id="scroll1" style="position: absolute; top: 60px; left: 20px;" onclick="showPopup('scroll1')">
+  <img class="scroll" src="./images/scrisoare_inchisa.webp" alt="Scroll Icon">
+</div>
+<div id="scroll2" style="position: absolute; top: 20px; left: 180px;" onclick="showPopup('scroll2')">
+  <img class="scroll" src="./images/scrisoare_inchisa.webp" alt="Scroll Icon">
+</div>
+<div id="scroll3" style="position: absolute; top: 10px; left: 320px;" onclick="showPopup('scroll3')">
+  <img class="scroll" src="./images/scrisoare_inchisa.webp" alt="Scroll Icon">
+</div>
+<div id="scroll4" style="position: absolute; top: 55px; left: 450px;" onclick="showPopup('scroll4')">
+  <img class="scroll" src="./images/scrisoare_inchisa.webp" alt="Scroll Icon">
+</div>
+<div id="scroll5" style="position: absolute; top: 120px; left: 540px;" onclick="showPopup('scroll5')">
+  <img class="scroll" src="./images/scrisoare_inchisa.webp" alt="Scroll Icon">
+</div>
+<div id="scroll6" style="position: absolute; top: 200px; left: 790px;" onclick="showPopup('scroll6')">
+  <img class="scroll" src="./images/scrisoare_inchisa.webp" alt="Scroll Icon">
+</div>
+<div id="scroll7" style="position: absolute; top: 95px; left: 950px;" onclick="showPopup('scroll7')">
+  <img class="scroll" src="./images/scrisoare_inchisa.webp" alt="Scroll Icon">
+</div>
+<div id="scroll8" style="position: absolute; top: 120px; left: 1070px;" onclick="showPopup('scroll8')">
+  <img class="scroll" src="./images/scrisoare_inchisa.webp" alt="Scroll Icon">
+</div>
+<div id="scroll9" style="position: absolute; top: 50px; left: 1150px;" onclick="showPopup('scroll9')">
+  <img class="scroll" src="./images/scrisoare_inchisa.webp" alt="Scroll Icon">
+</div>
+<div id="scroll10" style="position: absolute; top: 90px; left: 1270px;" onclick="showPopup('scroll10')">
+  <img class="scroll" src="./images/scrisoare_inchisa.webp" alt="Scroll Icon">
+</div>
+
+<div class="popup" id="popup">
+  <div id="popup-text-container"></div>
+<!--  <button onclick="closePopup()">Închide</button>-->
+</div>
+<div class="overlay" id="overlay" onclick="closePopup()"></div>
+
+<div class="celebration-message" id="celebration-message">
+  Felicitări! Ai citit toate scrisorile!
+</div>
+
+<audio id="celebration-sound" src="../sounds/celebration.mp3"></audio>
+
+<script src="home.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joc: Găsește pasărea</title>
+  <link rel="stylesheet" href="joc3.css">
+</head>
+<body>
+<h1>Care este poziția păsării față de copac?</h1>
+<h3>Alege poziția corectă din direcțiile de mai jos.</h3>
+<div class="game-container">
+  <div id="tree-container">
+    <div id="bird" class="bird"></div>
+  </div>
+  <div class="button-container">
+    <button class="btn" onclick="checkPosition('above')"><img src="./images/up-arrow.png" alt="Sus" class="icon"> Deasupra</button>
+    <button class="btn" onclick="checkPosition('left')"><img src="./images/left-arrow.png" alt="Stânga" class="icon"> În stânga</button>
+    <button class="btn" onclick="checkPosition('right')"><img src="./images/right-arrow.png" alt="Dreapta" class="icon"> În dreapta</button>
+    <button class="btn" onclick="checkPosition('front')"><img src="./images/arrows-to-the-center.png" alt="Între crengi" class="icon"> Între crengi</button>
+  </div>
+</div>
+<div id="message" class="message"></div>
+<script src="joc3.js"></script>
+</body>
+</html>

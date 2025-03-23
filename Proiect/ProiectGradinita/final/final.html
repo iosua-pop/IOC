@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felicitări!</title>
+    <link rel="stylesheet" href="final.css">
+</head>
+<body>
+    <div class="final-container">
+        <h1>🎉 Felicitări! 🎉</h1>
+        <p>Ai terminat cu succes toate jocurile! Îți mulțumim că ai participat la această activitate educativă.</p>
+        <button onclick="restartActivity()">Reîncepe Activitatea</button>
+    </div>
+
+    <audio id="celebration-sound" src="../sounds/celebration.mp3"></audio>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script>
+        function launchConfetti() {
+            const duration = 5 * 1000;
+            const end = Date.now() + duration;
+
+            (function frame() {
+                confetti({
+                    particleCount: 5,
+                    angle: 60,
+                    spread: 55,
+                    origin: { x: 0 },
+                });
+                confetti({
+                    particleCount: 5,
+                    angle: 120,
+                    spread: 55,
+                    origin: { x: 1 },
+                });
+
+                if (Date.now() < end) {
+                    requestAnimationFrame(frame);
+                }
+            })();
+        }
+
+        function playCelebrationSound() {
+            const celebrationSound = document.getElementById('celebration-sound');
+            celebrationSound.play().then(() => {
+                console.log('Sunetul a început să fie redat.');
+            }).catch((error) => {
+                console.log('Redarea automată a fost blocată:', error);
+            });
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            playCelebrationSound();
+            launchConfetti();
+        });
+
+        function restartActivity() {
+            window.location.href = '../home/home.html';
+        }
+    </script>
+</body>
+</html>
